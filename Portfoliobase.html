@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Portfolio</title>
+    <link rel="stylesheet" href="Portfoliostyle.css" />
+    <link rel="shortcut icon" type="image/jpg" href="Projectimg/Icon.jpg" />
+</head>
+<body>
+    <div id="Barramovil"><img id="icono" src="Projectimg/Icon.jpg" alt="FM Icono"/><span onclick="mostrar()" id="Botonguesa">&#9776;</span></div>
+    <nav id="menu" onclick="retirar()">
+        <ul>
+            <li><a onclick="Move(this)">Home</a></li>
+            <li><a onclick="Move(this)">About</a></li>
+            <li><a onclick="Move(this)">Projects</a></li>
+            <li><a onclick="Move(this)">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="Home">
+        <img id="Logo" src="Projectimg/Logo.png" alt="FM Logo" />
+    </div>
+
+    <section id="About">
+        <h1>About</h1>
+        <p>My name is Fabian. I'm a Web designer and developer, who is currently improving his skills, aiming to create any type of website with clear and accessible interfaces</p>
+        <div id="SoftwareSkills">
+            <h2>Software Skills</h2>
+            <ul>
+                <li>HTML <br /> <img src="https://opencode.us/wp-content/uploads/2013/10/html5.png" alt="HTML logo" /></li>
+                <li>CSS<br /> <img src="https://opencode.us/wp-content/uploads/2013/10/css3.png" alt="CSS logo" /></li>
+                <li>Javascript<br /> <img src="https://opencode.us/wp-content/uploads/2013/10/javascript.png" alt="Javascript logo" /></li>
+                <li>Java<br /> <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-java-software-develop-command-language-512.png" alt="Java logo" /></li>
+                <li>Python<br /> <img src="https://www.devacademy.es/wp-content/uploads/2018/10/python-logo-1024x1024.png" alt="Python logo" /></li>
+            </ul>
+        </div>
+        <div id="Languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    English <br /> <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                </li>
+                <li>Spanish <br /> <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span></li>
+            </ul>
+        </div>
+    </section>
+    <section id="Projects">
+        <h1>Projects</h1>
+        <div id="ContenedorProyecto">
+            <button class="carrusel-boton" id="anterior" onclick="SlideLeft()">&lt;</button>
+            <button class="carrusel-boton" id="siguiente" onclick="SlideRight()">&gt;</button>
+            <div id="carrusel">
+                <img class="Projectimgs" src="Projectimg/AwesomeWeb.png" alt="Simple Web Page" />
+                <img class="Projectimgs" src="Projectimg/HoverGallery.png" alt="Gallery with Hover interaction" />
+                <img class="Projectimgs" src="Projectimg/JavaSForm.png" alt="Shipping and Billing Form" />
+                <img class="Projectimgs" src="Projectimg/ImageFilters.png" alt="Web to apply Filters to images" />
+                <img class="Projectimgs" src="Projectimg/GreenScreen.png" alt="Green screen software" />
+            </div>
+            <div id="carrusel-progreso">
+                <div class="Progreso"></div>
+                <div class="Progreso"></div>
+                <div class="Progreso"></div>
+                <div class="Progreso"></div>
+                <div class="Progreso"></div>
+            </div>
+        </div>
+        <div id="Description"> <span id="textcription">Simple Web Page: </span><a href="https://codepen.io/fmarquez/full/OJwrZyr" target="_blank" id="seeproject" style="background-color:#fff">See Full project</a></div>
+    </section>
+    <section id="Contact">
+        <h1>Contact</h1>
+        <ul>
+            <li><a href="mailto:f69marquez@gmail.com" target="_blank"><img src="https://th.bing.com/th/id/R.ce199b2e785a2abf0b028f986d1fcae3?rik=VodAJUJHnIG1xQ&pid=ImgRaw&r=0/" alt="Gmail logo" /> </a></li>
+            <li><a href="https://www.linkedin.com/in/fabian-marquez-a8b364212" target="_blank"><img src="https://th.bing.com/th/id/R.0a7f520070a64f2f0c11a8b1afc6eaa4?rik=dIqxLgIFb3LUUQ&pid=ImgRaw&r=0" alt="LinkedIn logo" /></a></li>
+            <li><a href="https://www.instagram.com/iamfav11/" target="_blank"><img src="https://th.bing.com/th/id/R.950464fcbb88221fba2d72bd8e997118?rik=8t0QSyLs40dupQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-logo-eps-png-instagram-logo-1784.png&ehk=ZLn0UdAH6aoX9f2NvarOxzeDX5DAdAIpqOa%2f2s65Y7I%3d&risl=&pid=ImgRaw&r=0" alt="Instagram Logo" /></a></li>
+        </ul>
+    </section>
+    <script src="Portfolioscript.js"></script>
+</body>
+
+</html>

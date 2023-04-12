@@ -1,0 +1,262 @@
+Body{
+	background: #000;
+	font-family: sans-serif;
+	margin: 3%;
+}
+
+#Home{
+	width: 100%;
+}
+
+#Barramovil{
+	display:none;
+}
+
+h1, h2{
+	text-align:center;
+}
+
+h2{
+	font-size:18px;
+}
+#menu {
+	font-size: 1.2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	padding: 1rem;
+	line-height: 50%;
+	z-index: 1;
+	width: 100%;
+	transition: transform 0.4s ease;
+}
+
+#menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#menu li{
+	display: inline-block;
+	margin-right: 4rem;
+}
+#menu a {
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	cursor:pointer;
+	transition: border-bottom 0.5s ease;
+}
+#menu a:hover {
+	border-bottom: 2px solid #ffffff;
+}
+
+#menu.hidden{
+	transform:translateY(-100%);
+}
+
+#Logo{
+	display:block;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+
+#Projects {
+	width: 100%;
+	color: #ffffff;
+}
+
+#ContenedorProyecto {
+	position: relative;
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#carrusel{
+	display: flex;
+	width:500%;
+	transition: transform 0.4s ease;
+}
+
+#carrusel img{
+	width: 20%;
+	margin-right: 1%;
+}
+
+.carrusel-boton {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	line-height:50%;
+	width: 4.7%;
+	height: 8%;
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.8);
+	color: black;
+	font-size: 3vw;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.carrusel-boton:hover{
+	background-color: rgba(0,0,0,0.5);
+	color:white;
+}
+
+.carrusel-boton#anterior{
+	left:1.5%;
+}
+
+.carrusel-boton#siguiente{
+	right: 1.5%;
+}
+
+#carrusel-progreso{
+	display:flex;
+	justify-content:center;
+}
+
+
+.Progreso{
+	height: 7px;
+	width: 7px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.Progreso:first-child{
+	background-color: rgba(255,255,255,1);
+}
+
+#Description{
+	text-align:center;
+	font-size:120%;
+}
+
+#seeproject {
+	text-decoration: none;
+	color: #000;
+	background: radial-gradient(#ffffff, #a3a3a3);
+	padding: 2.5px 5px 2.5px 5px;
+	margin: 2px;
+	border-radius: 10px;
+	border-bottom: 2px solid #4e4e4e;
+	border-right: 2px solid #4e4e4e;
+}
+
+#seeproject:hover, #seeproject:focus {
+	color: #fff;
+	background: radial-gradient(#a3a3a3, #626262);
+	border-bottom: 1px solid #4e4e4e;
+	border-right: 1px solid #4e4e4e;
+}
+
+#About{
+	width:100%;
+	color: #ffffff;
+}
+
+
+ul{
+	list-style:none;
+	display:flex;
+}
+
+li{
+	margin: 0 auto;
+	text-align:center;
+}
+
+#SoftwareSkills img, #Contact img{
+	display:flex;
+	height:50px;
+	margin: 0 auto;
+}
+
+.stars{
+	font-size:20px;
+}
+
+#Contact{
+	width: 100%;
+	color: #ffffff;
+}
+
+@media (max-width: 480px){
+	body{
+		padding-top: 30px;
+	}
+	#Barramovil{
+		display:flex;
+		position:fixed;
+		background-color: rgba(0,0,0,0.8);
+		top:0;
+		right:0;
+		left:0;
+		padding-top:2%;
+	}
+	#Description{
+		font-size:100%;
+	}
+	#icono{
+		position:relative;
+		height:5vh;
+		left:5%;
+	}
+
+	#Botonguesa{
+		position:relative;
+		color: #ffffff;
+		font-size:5vh;
+		left:75%;
+		cursor:pointer;
+	}
+
+	#menu {
+		bottom: 0;
+		background-color: rgba(0,0,0,0.6);
+		z-index: 2;
+	}
+	#menu ul{
+		display:grid;
+	}
+
+	#menu li{
+		display: initial;
+		margin: 18%;
+		font-size: 200%;
+	}
+
+
+	#SoftwareSkills ul{
+		display: grid;
+		grid-template-columns: auto auto;
+		row-gap: 10px;
+		column-gap: 10px;
+		margin-left: -40px;
+	}
+
+	#SoftwareSkills li:nth-child(3) {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	#Languages ul, #Contact ul{
+		display: initial;
+		margin: 0;
+		padding: 0;
+	}
+
+	#Languages li, #Contact li{
+		margin: 10%;
+	}
+}
