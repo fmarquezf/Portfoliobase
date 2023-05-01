@@ -263,7 +263,10 @@ li{
 		line-height:0%;
 	}
 
-
+	#ContenedorProyecto {
+		width:100%;
+	}
+	
 	#SoftwareSkills ul{
 		display: grid;
 		grid-template-columns: auto auto;
