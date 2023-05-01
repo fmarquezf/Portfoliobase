@@ -2,21 +2,41 @@ Body{
 	background: #000;
 	font-family: sans-serif;
 	margin: 3%;
+	margin-top:0%;
 }
 
 #Home{
+	padding-top: 8%;
 	width: 100%;
+}
+
+#Logo {
+	display: inline-block;
+	width: 65%;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	display: inline-block;
+	position:relative;
+	width: 30%;
+	color:#ffffff;
+	height:100%;
+	font-size: 6vw;
+	vertical-align:top;
+	text-align:center;
 }
 
 #Barramovil{
 	display:none;
 }
 
-h1, h2{
+h2, h3{
 	text-align:center;
 }
 
-h2{
+h3{
 	font-size:18px;
 }
 #menu {
@@ -26,9 +46,7 @@ h2{
 	left: 0;
 	right: 0;
 	color: #ffffff;
-	background-color: rgba(0,0,0,0.5);
 	font-family: sans-serif;
-	padding: 1rem;
 	line-height: 50%;
 	z-index: 1;
 	width: 100%;
@@ -40,9 +58,13 @@ h2{
 	margin:0;
 	padding:0;
 }
-#menu li{
+#menu li {
 	display: inline-block;
-	margin-right: 4rem;
+	padding: 0 3rem 0 1rem;
+	background: radial-gradient(rgba(90,90,90,0.4), rgba(150,150,150,0.4));
+	width: 100%;
+	line-height: 200%;
+	text-align: center;
 }
 #menu a {
 	color: #ffffff;
@@ -59,12 +81,6 @@ h2{
 	transform:translateY(-100%);
 }
 
-#Logo{
-	display:block;
-	width:100%;
-	margin: 0;
-	padding: 0;
-}
 
 #Projects {
 	width: 100%;
@@ -91,32 +107,33 @@ h2{
 
 .carrusel-boton {
 	position: absolute;
-	top: 50%;
 	z-index: 1;
-	line-height:50%;
-	width: 4.7%;
-	height: 8%;
+	top: 0%;
+	width: 7.5%;
 	border: none;
-	border-radius: 50%;
-	background-color: rgba(255,255,255,0.8);
-	color: black;
-	font-size: 3vw;
-	font-weight: bold;
+	background-color: rgba(0,0,0,0.05);
+	color: rgba(0,0,0,0.1);
+	font-size: 4vw;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	height: 100%;
+}
+.carrusel-boton span{
+	display:block;
+	transform: scaleY(4);
 }
 
 .carrusel-boton:hover{
-	background-color: rgba(0,0,0,0.5);
-	color:white;
+	background-color: rgba(0,0,0,0.4);
+	color:rgba(255,255,255,0.7);
 }
 
 .carrusel-boton#anterior{
-	left:1.5%;
+	left:0%;
 }
 
 .carrusel-boton#siguiente{
-	right: 1.5%;
+	right: 0%;
 }
 
 #carrusel-progreso{
@@ -204,6 +221,14 @@ li{
 		left:0;
 		padding-top:2%;
 	}
+
+	#Logo {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
 	#Description{
 		font-size:100%;
 	}
@@ -234,6 +259,8 @@ li{
 		display: initial;
 		margin: 18%;
 		font-size: 200%;
+		width: auto;
+		line-height:0%;
 	}
 
 
