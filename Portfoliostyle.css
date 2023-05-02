@@ -228,6 +228,10 @@ li{
 		margin: 0;
 		padding: 0;
 	}
+	
+	h1{
+		width:100%;
+	}
 
 	#Description{
 		font-size:100%;
